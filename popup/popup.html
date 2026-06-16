@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Answer Fireworks</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <div>
+          <h1>AI Answer Fireworks</h1>
+          <p>回答完成时自动放烟花</p>
+        </div>
+        <label class="switch" title="启用或禁用扩展">
+          <input id="enabled" type="checkbox">
+          <span></span>
+        </label>
+      </header>
+
+      <section class="section">
+        <h2>烟花强度</h2>
+        <div class="segments" role="radiogroup" aria-label="烟花强度">
+          <label>
+            <input type="radio" name="strength" value="light">
+            <span>轻量</span>
+          </label>
+          <label>
+            <input type="radio" name="strength" value="normal">
+            <span>标准</span>
+          </label>
+          <label>
+            <input type="radio" name="strength" value="party">
+            <span>庆祝</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>触发条件</h2>
+        <label class="field">
+          <span>最短回答字数</span>
+          <input id="minAnswerLength" type="number" min="0" max="5000" step="50">
+        </label>
+        <div class="field" style="margin-top:12px">
+          <span>中断时不放烟花</span>
+          <label class="switch">
+            <input id="skipOnInterrupt" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>站点</h2>
+        <div class="site-list">
+          <label><input type="checkbox" data-site="chatgpt"> ChatGPT</label>
+          <label><input type="checkbox" data-site="claude"> Claude</label>
+          <label><input type="checkbox" data-site="gemini"> Gemini</label>
+          <label><input type="checkbox" data-site="perplexity"> Perplexity</label>
+          <label><input type="checkbox" data-site="poe"> Poe</label>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <button id="test" type="button">测试烟花</button>
+        <span id="status" aria-live="polite"></span>
+      </footer>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
