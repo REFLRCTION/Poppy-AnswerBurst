@@ -2,7 +2,7 @@
 
 # 🎆 Poppy-AnswerBurst
 
-**一个 Manifest V3 浏览器扩展：当 AI 聊天完成回答时，自动在当前标签页绽放烟花庆祝！**
+**一个 Manifest V3 浏览器扩展：当 AI 聊天完成回答时，自动在当前标签页绽放礼花庆祝！**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
@@ -17,7 +17,7 @@
 
 | ✨ 特性 | 🎯 支持平台 | 🛡️ 隐私 |
 |:--------:|:-----------:|:-------:|
-| 🎨 烟花特效 | 💬 ChatGPT | 🔒 本地运行 |
+| 🎨 礼花特效 | 💬 ChatGPT | 🔒 本地运行 |
 | ⚙️ 可配置 | 🤖 Claude | 🚫 无数据上传 |
 | 🎯 智能检测 | 🧠 Gemini | ✅ 尊重隐私 |
 
@@ -25,19 +25,25 @@
 
 ## ✨ 功能特性
 
+<div align="center">
+
+![Orange UI](orange.png)
+
+</div>
+
 ### 🎨 视觉效果
 | 功能 | 描述 |
 |:----:|------|
-| 🎆 **烟花特效** | 基于 Canvas 的轻量粒子引擎，流畅动画 |
+| 🎆 **礼花特效** | 基于 Canvas 的轻量粒子引擎，流畅动画 |
 | 🎯 **智能触发** | 检测回答完成状态，避免误触发 |
-| 🌈 **可调强度** | 支持低、中、高三种烟花强度 |
+| 🌈 **可调强度** | 支持低、中、高三种礼花强度 |
 
 ### ⚙️ 设置选项
 | 设置项 | 说明 |
 |:------:|------|
 | 🔘 **总开关** | 一键启用/禁用所有功能 |
-| 🎚️ **烟花强度** | 调整烟花粒子数量和范围 |
-| 🔢 **最小字数** | 设置触发烟花的最小回答长度 |
+| 🎚️ **礼花强度** | 调整礼花粒子数量和范围 |
+| 🔢 **最小字数** | 设置触发礼花的最小回答长度 |
 | 🌐 **站点开关** | 单独控制每个 AI 平台的触发 |
 
 ### 🛡️ 隐私保护
@@ -48,25 +54,6 @@
 
 ---
 
-## 🎬 效果预览
-
-<div align="center" style="background: url('16.png') center/cover no-repeat; padding: 60px 20px; border-radius: 12px;">
-
-### 🎆 烟花绽放效果
-
-![Fireworks Demo](16.png)
-
-</div>
-
-<div align="center" style="background: url('6967FD903E61BC970DF78BC45462DCAE.png') center/cover no-repeat; padding: 60px 20px; border-radius: 12px; margin-top: 20px;">
-
-### ⚙️ 设置面板界面
-
-![UI Preview](6967FD903E61BC970DF78BC45462DCAE.png)
-
-</div>
-
----
 
 ## 🚀 快速开始
 
@@ -98,8 +85,8 @@ Poppy-AnswerBurst/
 ├── manifest.json          # 扩展配置文件
 ├── src/
 │   ├── content.js         # 站点适配器 & 检测逻辑
-│   ├── background.js      # 后台服务 & 烟花注入
-│   └── fireworks.js       # Canvas 烟花粒子引擎
+│   ├── background.js      # 后台服务 & 礼花注入
+│   └── fireworks.js       # Canvas 礼花粒子引擎
 └── popup/
     ├── popup.html         # 设置面板界面
     ├── popup.css          # 样式文件
@@ -114,10 +101,10 @@ Poppy-AnswerBurst/
 使用 **MutationObserver** + **轮询状态机** 检测回答状态：
 
 ```
-回答生成中 → 停止按钮出现 → 停止按钮消失 → 文本稳定 → 🎆 触发烟花
+回答生成中 → 停止按钮出现 → 停止按钮消失 → 文本稳定 → 🎆 触发礼花
 ```
 
-### 烟花引擎
+### 礼花引擎
 - 基于 Canvas 2D API
 - 粒子系统 + 物理模拟
 - 支持多种颜色和形状
@@ -131,7 +118,7 @@ Poppy-AnswerBurst/
 
 ## 🐛 常见问题
 
-### Q: 为什么烟花没有触发？
+### Q: 为什么礼花没有触发？
 **A:** 请检查：
 1. 扩展已正确加载（开发者模式下可见）
 2. 对应 AI 平台的开关已开启
@@ -146,7 +133,7 @@ Poppy-AnswerBurst/
 - ✅ Perplexity (perplexity.ai)
 - ✅ Poe (poe.com)
 
-### Q: 如何自定义烟花颜色？
+### Q: 如何自定义礼花颜色？
 **A:** 修改 `src/fireworks.js` 中的颜色配置数组即可。
 
 ---
