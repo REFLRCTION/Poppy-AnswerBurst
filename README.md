@@ -10,7 +10,7 @@
 ![Edge](https://img.shields.io/badge/edge-✓-brightgreen.svg)
 
 </div>
-
+<div align="center" style="background: url('6967FD903E61BC970DF78BC45462DCAE.png') center/cover no-repeat; padding: 60px 20px; border-radius: 12px; margin-top: 20px;">
 ---
 
 <div align="center">
@@ -45,26 +45,6 @@
 - 🚫 **无数据上传** - 不上传或保存任何聊天内容
 - 🎯 **精准检测** - 只读取页面状态，不读取内容
 - ♿ **无障碍支持** - 尊重系统的 `prefers-reduced-motion` 设置
-
----
-
-## 🎬 效果预览
-
-<div align="center" style="background: url('16.png') center/cover no-repeat; padding: 60px 20px; border-radius: 12px;">
-
-### 🎆 烟花绽放效果
-
-![Fireworks Demo](16.png)
-
-</div>
-
-<div align="center" style="background: url('6967FD903E61BC970DF78BC45462DCAE.png') center/cover no-repeat; padding: 60px 20px; border-radius: 12px; margin-top: 20px;">
-
-### ⚙️ 设置面板界面
-
-![UI Preview](6967FD903E61BC970DF78BC45462DCAE.png)
-
-</div>
 
 ---
 
